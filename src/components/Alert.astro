@@ -1,0 +1,30 @@
+---
+const { t }=Astro.props;
+const baseStyles = "fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[100] min-w-[300px] shadow-2xl transition-all duration-300 transform";
+
+---
+<div id="form-alert" class={`${baseStyles} p-4 rounded-xl border opacity-0 -translate-y-4 pointer-events-none`} role="alert" aria-live="polite">
+    <div class="flex items-center gap-3">
+        <div id="form-alert-icon">
+            <!--Default icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </div>
+
+        <div class="flex-1">
+            <h3 class="font-bold text-base" id="form-alert-msg">
+                {t.alert?.success ?? "Enviado"}
+            </h3>
+        </div>
+
+        <button type="button" id="close-alert-btn" class="text-gray-400 hover:text-gray-900" aria-label={t.alert?.btn ?? "Cerrar" }>
+            <span class="sr-only">{t.aler?.btn ?? "Cerrar"}</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,202 @@
+---
+const { t }=Astro.props;
+import Alert from "./Alert.astro";
+import SectionContainer from "./SectionContainer.astro";
+import { getLangFromUrl } from "../utils/i18";
+const lang = getLangFromUrl(Astro.url);
+
+const contacts = [
+    { icon: 'fa-phone', title: t.contactform.contact , description:'(+52) 55 5555 5555 '},    
+    { icon: 'fa-envelope', title: t.contactform.email, description:'correo@empresa.com.mx'},
+    { icon: 'fa-location-dot', title: t.contactform.location, description:''},
+    { icon: 'fa-clock', title: t.contactform.schedule, description:'Lunes a Viernes de 00:00 am - 00:00 pm'},
+
+];
+
+const videos = {
+    es: ".mp4#t=0.001",
+    en: ".mp4#t=0.001",
+    ch: ".mp4#t=0.001"
+}
+---
+<SectionContainer>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-6 items-stretch">
+        
+        <!-- COLUMNA IZQUIERDA: TARJETAS DE CONTACTO -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center items-stretch content-start">
+            {contacts.map((contact) => (
+                <div data-aos="zoom-in-up" class="bg-secondary/5 w-full p-6 pt-8 border border-default rounded-base shadow-sm flex flex-col items-center justify-start transition-all duration-300 hover:shadow-md hover:bg-secondary/10">
+                    <div class="flex-shrink-0 bg-primary p-3 rounded-full flex items-center justify-center shadow-md w-12 h-12 mb-4">
+                        <i class={`fa-solid ${contact.icon} text-white text-xl`}></i>
+                    </div>
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-heading leading-snug">
+                        {contact.title}
+                    </h5>
+                    <p class="text-dark text-base opacity-90 leading-relaxed">
+                        {contact.description}
+                    </p>
+                </div>  
+            ))}       
+        </div>
+
+        <!-- COLUMNA DERECHA: MAPA INTERACTIVO -->
+        <div class="w-full min-h-[350px] sm:min-h-[400px] lg:h-full border border-default/40 rounded-base overflow-hidden shadow-sm">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.4033056041426!2d-100.2605329203918!3d25.59151139389936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf5603d14af7%3A0xd47d68c1cda8d144!2sValle%20Alto%20Centro%20De%20Negocios!5e0!3m2!1ses-419!2smx!4v1777592796734!5m2!1ses-419!2smx" 
+                class="w-full h-full min-h-[350px] lg:h-full" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+    <!--FORMULARIO -->
+    <div class="grid mb-8 bg-gray-default border border-default/40 rounded-base shadow-xl grid-cols-1 md:grid-cols-2 overflow-hidden items-stretch">
+    
+    <div class="hidden md:flex flex-col justify-center bg-neutral-secondary-medium w-full min-h-[500px]">
+        <img src="/contact.webp" alt="Contacto corporativo" class="w-full h-full object-cover object-center max-h-[650px]" loading="lazy">
+        </div>
+
+    <Alert t={t} id="form-alert" variant="success" show={false} />
+
+    <div class="flex flex-col justify-center p-6 sm:p-8 md:p-10 bg-neutral-50/40 relative">
+        <div class="text-center mb-8">
+            <h5 class="text-3xl font-extrabold text-secondary mb-3 tracking-tight">
+                {t.contactform.titleform}
+            </h5>
+            <p class="text-dark/80 text-base md:text-lg">
+                {t.contactform.subtitleform}
+            </p>
+        </div>
+        
+        <form id="contact-form" class="space-y-5" method="POST" action="">
+            <div class="grid gap-5 grid-cols-1 sm:grid-cols-2">
+                <div class="space-y-2">
+                    <label for="name" class="block text-sm font-semibold text-heading">{t.contactform.label_name}</label>
+                    <input type="text" id="name" name="name" class="bg-white border border-default-medium text-heading text-sm rounded-base focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none block w-full px-4 py-3 shadow-sm transition-all placeholder:text-gray-400" placeholder="Juan López" required>
+                </div>
+
+                <div class="space-y-2">
+                    <label for="phone" class="block text-sm font-semibold text-heading">{t.contactform.label_phone}</label>
+                    <input type="tel" id="phone" name="phone" class="bg-white border border-default-medium text-heading text-sm rounded-base focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none block w-full px-4 py-3 shadow-sm transition-all placeholder:text-gray-400" pattern="[0-9]{10}" placeholder="55 5555 5555" required />
+                </div>
+            </div>
+
+            <div class="grid gap-5 grid-cols-1 sm:grid-cols-2">
+                <div class="space-y-2">
+                    <label for="email" class="block text-sm font-semibold text-heading">{t.contactform.label_email}</label>
+                    <input type="email" id="email" name="email" class="bg-white border border-default-medium text-heading text-sm rounded-base focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none block w-full px-4 py-3 shadow-sm transition-all placeholder:text-gray-400" placeholder={t.contactform.placeholder_email} required />
+                </div>
+
+                <div class="space-y-2">
+                    <label for="service" class="block text-sm font-semibold text-heading">{t.contactform.label_service}</label>
+                    <select id="service" name="service" class="bg-white border border-default-medium text-heading text-sm rounded-base focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none block w-full px-4 py-3 shadow-sm transition-all cursor-pointer" required>
+                        <option value="" disabled selected>{t.contactform.placeholder_service}</option>
+                        <option value="Consultoría y finanzas">{t.contactform.option_consultory}</option>
+                        <option value="Soporte operativo">{t.contactform.option_support}</option>
+                        <option value="Marketing y publicidad">{t.contactform.option_marketing}</option>
+                        <option value="Agendar una llamada">{t.contactform.option_call}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label for="message" class="block text-sm font-semibold text-heading">{t.contactform.label_message}</label>
+                <textarea name="message" id="message" rows="4" class="bg-white border border-default-medium text-heading text-sm rounded-base focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none block w-full p-4 shadow-sm transition-all placeholder:text-gray-400 resize-none" placeholder={t.contactform.placeholder_message}></textarea>
+            </div>
+
+            <input type="text" name="company" tabindex="-1" autocomplete="off" class="hidden" />
+
+            <div class="flex justify-end pt-2">
+                <button id="submit-btn" type="submit" class="w-full sm:w-auto text-white bg-secondary hover:bg-primary border border-transparent focus:ring-4 focus:ring-secondary/20 shadow-md font-bold leading-5 rounded-base text-base px-8 py-3.5 transition-all transform active:scale-95 disabled:opacity-50 disabled:pointer-events-none">
+                    {t.contactform.button}
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script is:inline type="application/json" id="contact-i18n">{JSON.stringify(t).replace(/</g, "\\u003c")}</script>
+    <script>
+        function initContactForm(){
+            const form = document.getElementById("contact-form");
+            const alertEl = document.getElementById("form-alert");
+            const alertMsg = document.getElementById("form-alert-msg");
+            const closeBtn = document.getElementById("close-alert-btn");
+            const submitBtn = document.getElementById("submit-btn");
+
+            if(!form || !alertEl || !alertMsg) return;
+
+            if(form.dataset.bound === "1") return;
+            form.dataset.bound = "1";
+
+            const readI18n = () => {
+                const el = document.getElementById("contact-i18n");
+                if(!el) return {};
+                const raw = (el.textContent || "").trim();
+                if(!raw) return {};
+                try { return JSON.parse(raw);} catch { return {};}
+            };
+
+            const t = readI18n();
+
+            const showAlert = (message, type="success") => {
+                alertMsg.textContent = message;
+                alertEl.classList.remove(
+                    "border-green-200","bg-green-50","text-green-800",
+                    "border-red-200","bg-red-50","text-red-800"
+                );
+
+                if(type === "success"){
+                    alertEl.classList.add("border-green-200", "bg-green-50", "text-green-800");
+                }else {
+                    alertEl.classList.add("border-red-200", "bg-red-50", "text-red-800");
+                }
+
+                alertEl.classList.remove("opacity-0","-translate-y-4","pointer-events-none");
+                alertEl.classList.add("opacity-100","translate-y-0");
+            };
+
+            const closeAlert = () => {
+                alertEl.classList.remove("opacity-100","translate-y-0");
+                alertEl.classList.add("opacity-0","-translate-y-4","pointer-events-none");
+            }
+
+            window.closeAlert = closeAlert;
+            closeBtn?.addEventListener("click", closeAlert);
+
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                
+                const honey = form.querySelector('input[name="company"]');
+                if (honey && honey.value.trim() !== "") return;
+
+                submitBtn?.setAttribute("disabled", "true");
+
+                try{
+                    const formData = new FormData(form);
+                    const res = await fetch(form.action, {
+                        method: "POST",
+                        body: formData,
+                    });
+
+                    if(res.ok){
+                        showAlert(t?.alert?.success ?? "Su mensaje ha sido enviado con éxito", "success");
+                        form.reset();
+                    }else{
+                        showAlert(t?.alert?.error ?? "Ocurrió un error al enviar el mensaje.", "error");
+                    }
+                }catch(err){
+                    showAlert(t?.alert?.error ?? "Ocurrió un error al enviar el mensaje.", "error");
+                }finally{
+                    submitBtn?.removeAttribute("disabled");
+                }
+            });
+        }
+
+        initContactForm();
+        document.addEventListener("astro:page-load", initContactForm);
+    </script>
+    </div>
+    
+</SectionContainer>

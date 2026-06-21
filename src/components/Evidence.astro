@@ -1,0 +1,42 @@
+---
+import SectionTitle from "./SectionTitle.astro";
+const { t }= Astro.props;
+
+const videoServices= [
+    {image: '/inventario.webp', alt: 'Inventario', icon: 'fa-boxes-stacked', title: t.evidence.firstEvidence, description: t.evidence.firstEvidenceDescription, category: 'INVENTARIO'},
+    {image: '/archivo-muerto.webp', alt: 'Productos defectuosos', icon: 'fa-file-shield', title: t.evidence.secondEvidence, description: t.evidence.secondEvidenceDescription, category: 'INVENTARIO'},
+    {image: '/productos-caducados.webp', alt: 'Archivo muerto', icon: 'fa-calendar-times', title: t.evidence.thirdEvidence, description: t.evidence.thirdEvidenceDescription, category: 'INVENTARIO'},
+    {image: '/productos-defectuosos.webp', alt: 'Productos caducados', icon: 'fa-triangle-exclamation', title: t.evidence.fourthEvidence, description: t.evidence.fourthEvidenceDescription, category: 'INVENTARIO'},
+    {image: '/mercancia.webp', alt: 'Mercancía', icon: 'fa-microchip', title: t.evidence.fourthEvidence, description: t.evidence.fourthEvidenceDescription, category: 'INVENTARIO'},
+];
+---
+<SectionTitle title={t.Evidencetitle}/>
+<p class="text-center text-base text-gray-dark">{t.evidence.descriptionEvidenceSection}</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 max-w-6xl mx-auto">
+    {videoServices.map((item) => (
+    <div class="bg-primary border border-transparent rounded-2xl overflow-hidden shadow-xl flex flex-col group hover:border-emerald-800/60">
+        <div class="relative w-full overflow-hidden bg-neutral-900 flex items-center justify-center cursor-pointer">
+            <img src={item.image} alt={item.alt} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="eager"/>       
+                <!--<span class={`absolute top-4 left-4 text-white font-bold tracking-wider px-2.5 py-1 border rounded-full`}>
+                    {item.category}
+                </span>-->
+        </div>
+
+        <div class="p-6 flex-grow flex flex-col justify-start space-y-3">
+            <div class="flex items-start space-x-3">
+                <div class="flex-shrink-0 text-[#4ade80] text-xl mt-0.5">
+                    <i class={`fa-solid ${item.icon}`}></i>
+                </div>
+                <h4 class="text-xl font-bold text-white tracking-tight leading-snug group-hover:text-[#4ade80] transition-colors">
+                    {item.title}
+                </h4>
+            </div>
+
+            <p class="text-gray-100 text-sm md:text-base leading-relaxed pl-8">
+                {item.description}
+            </p>
+        </div>
+
+    </div>
+    ))}
+</div>

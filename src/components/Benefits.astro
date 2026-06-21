@@ -1,0 +1,36 @@
+---
+import SectionTitle from "./SectionTitle.astro";
+import SectionContainer from "./SectionContainer.astro";
+const { t }= Astro.props;
+
+const benefits = [
+    {icon: 'fa-users-viewfinder', title: t.benefit.firstBenefitTitle, description: t.benefit.firstBenefitDescription},
+    {icon: 'fa-photo-film', title: t.benefit.secondBenefitTitle, description: t.benefit.secondBenefitDescription},
+    {icon: 'fa-route', title: t.benefit.thirdBenefitTitle, description: t.benefit.thirdBenefitDescription},
+    {icon: 'fa-warehouse', title: t.benefit.fourthBenefitTitle, description: t.benefit.fourthBenefitDescription},
+
+];
+---
+<SectionTitle title={t.benefitsTitle} />
+<hr class="w-48 h-1 mx-auto my-4 bg-gray-soft border-0 rounded-sm mb-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 text-left max-w-4xl mx-auto mb-12">
+            {benefits.map((benefit) => (
+                <div class="flex items-start space-x-4 p-2">
+                    
+                    <div class="flex-shrink-0 bg-primary w-11 h-11 rounded-full flex items-center justify-center text-white shadow-md shadow-primary/20 transition-transform duration-300 hover:scale-110">
+                        <i class={`fa-solid ${benefit.icon} text-lg`}></i>
+                    </div>
+                    
+                    <div class="space-y-1">
+                        <h4 class="text-lg font-bold text-heading tracking-tight">
+                            {benefit.title}
+                        </h4>
+                        <p class="text-dark/80 text-sm md:text-base leading-relaxed">
+                            {benefit.description}
+                        </p>
+                    </div>
+
+                </div>
+            ))}
+        </div>
+

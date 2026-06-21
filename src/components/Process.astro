@@ -1,0 +1,79 @@
+---
+import SectionTitle from "./SectionTitle.astro";
+const {t} = Astro.props;
+const steps1 = [
+    {image: '/solicitud.webp', icon: 'fa-1', title: t.process.firstStepTitle, description: t.process.firstStepDescription},
+    {image: '/recoleccion.webp', icon: 'fa-2', title: t.process.secondStepTitle, description: t.process.secondStepDescription},
+    {image: '/descarga-mercancia.webp', icon: 'fa-3', title: t.process.thirdStepTitle, description: t.process.thirdStepDescription},
+    
+    
+];
+
+const steps2= [
+    {image: '/destruccion.webp', icon: 'fa-4', title: t.process.fourthStepTitle, description: t.process.fourthStepDescription},
+    {image: '/segregacion.webp', icon: 'fa-5', title: t.process.fivethStepTitle, description: t.process.fivethStepDescription},
+];
+
+/**{icon: '', title: t.process.sixthStepTitle, description: t.process.sixthStepDescription}, */
+---
+<SectionTitle title={t.processTitle} />
+<p class="text-base text-gray-dark text-center">{t.process.description}</p>
+<ol class="flex flex-col md:flex-row items-center md:items-start gap-16 md:gap-6 w-full pt-10">
+    {steps1.map((step) => (
+        <li class="relative flex-1 flex flex-col items-center group w-full">            
+            <div class="hidden md:block absolute border-default border-3 top-24 left-1/2 w-full h-0.5 bg-gray-200 -z-10 group-last:hidden"></div>
+            <div data-aos="fade-up" class="relative mb-8 flex-shrink-0">                
+                <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative bg-gray-100">
+                    <img src={step.image} alt={step.title} class="w-full h-full object-cover"/>
+                </div>
+                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-12 h-12 rounded-full bg-secondary flex items-center justify-center shadow-md zone-icon">
+                    <i class={`fa-solid ${step.icon} text-lg text-white`}></i>
+                </div>
+            </div>
+
+            <div class="px-4 text-center mt-4">
+                <h5 class="text-xl font-bold text-primary leading-tight">{step.title}</h5>
+                <p class="text-base text-gray-700 mt-2" set:html={step.description}></p>
+            </div>
+
+        </li>
+    ))}
+</ol>
+    <ol class="flex flex-col md:flex-row items-center md:items-start gap-16 md:gap-6 w-full pt-10">
+    {steps2.map((step) => (
+        <li class="relative flex-1 flex flex-col items-center group w-full">            
+            <div class="hidden md:block absolute border-default border-3 top-24 left-1/2 w-full h-0.5 bg-gray-200 -z-10 group-last:hidden"></div>
+            <div data-aos="fade-up" class="relative mb-8 flex-shrink-0">                
+                <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative bg-gray-100">
+                    <img src={step.image} alt={step.title} class="w-full h-full object-cover"/>
+                </div>
+                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-12 h-12 rounded-full bg-secondary flex items-center justify-center shadow-md zone-icon">
+                    <i class={`fa-solid ${step.icon} text-lg text-white`}></i>
+                </div>
+            </div>
+
+            <div class="px-4 text-center mt-4">
+                <h5 class="text-xl font-bold text-primary leading-tight">{step.title}</h5>
+                <p class="text-base text-gray-700 mt-2" set:html={step.description}></p>
+            </div>
+
+        </li>
+    ))}
+        <li class="relative flex-1 flex flex-col items-center group w-full">            
+            <div class="hidden md:block absolute border-default border-3 top-24 left-1/2 w-full h-0.5 bg-gray-200 -z-10 group-last:hidden"></div>
+            <div data-aos="fade-up" class="relative mb-8 flex-shrink-0">                
+                <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative bg-gray-100">
+                    <img src="/certificado.webp" alt="Regiones" class="w-full h-full object-cover"/>
+                </div>
+                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-12 h-12 rounded-full bg-secondary flex items-center justify-center shadow-md zone-icon">
+                    <i class="fa-solid fa-6 text-lg text-white"></i>
+                </div>
+            </div>
+
+            <div class="px-4 text-center mt-4">
+                <h5 class="text-xl font-bold text-primary leading-tight">{t.process.sixthStepTitle}</h5>
+                <p class="text-base text-gray-700 mt-2" set:html={t.process.sixthStepDescription}></p>
+            </div>
+
+        </li>
+    </ol>

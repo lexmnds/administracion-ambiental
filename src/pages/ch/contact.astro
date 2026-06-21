@@ -1,0 +1,18 @@
+---
+import ch from "../../i18n/ch.json";
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import SectionContainer from "../../components/SectionContainer.astro";
+import ContactForm from "../../components/ContactForm.astro";
+import Alert from "../../components/Alert.astro";
+
+---
+<Layout title="接觸">
+    <Navbar t={ch}/>
+    <Breadcrumbs t={ch}/>
+    <Alert t={ch}/>
+    <ContactForm t={ch}/>
+    <Footer t={ch}/>
+</Layout>

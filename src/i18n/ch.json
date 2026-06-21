@@ -1,0 +1,214 @@
+{
+    "navbar": {
+        "home": "開始",
+        "service": "服務",
+        "firstService": "財政破壞",
+        "secondService": "庫存銷毀",
+        "thirdService": "廢棄物銷毀",
+        "about": "我們是",
+        "contact": "接觸",
+        "spanish": "西班牙語 (MX)",
+        "english": "英語到 (US)", 
+        "chinese": "中文 (中国)",
+        "button": "索取方案"
+
+    },
+
+    
+    
+    "footer": {
+        "titleCardCallSection": "您的過時庫存交給專家處理",
+        "textCardCallSection": "採用環保方式進行徹底的實體銷毀。將產生的廢棄物分類回收，以保護您的品牌並保護環境。",
+        "text": "安全 | 保密 | 環境責任",
+        "call": "安排通話",
+        "cotization": "索取報價",
+        "slogan": "企業解體的永續解決方案。",
+        "services": "服務",
+        "firstService": "財政破壞",
+        "secondService": "庫存銷毀",
+        "thirdService": "廢棄物銷毀",
+        "contact": "接觸",
+        "legal": "隱私權聲明",
+        "dirección": ""
+
+    },
+
+    "hero": {
+        "title": "確保稅收銷毀，永久生態承諾",
+        "subtitle": "我們一步到位地保證符合監管要求並減少環境影響。",
+        "video": "複製",
+        "contact": "立即聯絡我們",
+        "titleCard":"每完成一項服務，我們就會種一棵樹。",
+        "descriptionCard": "透過與植樹造林計畫的策略聯盟，我們抵消了每個工業破壞過程的碳足跡。",
+        "miniCardTitle": "15k+",
+        "miniCardDescription": "種植的樹木"
+    },
+
+    "cardServices": {
+        "title": "我們的專長",
+        "firstCardTitle": "損失的破壞",
+        "firstCardDescription": "有效管理生產廢料，優化營運流程，減少對環境的影響。",
+        "secondCardTitle": "財政破壞",
+        "secondCardDescription": "對享有稅收優惠的資產和產品提供法律擔保並嚴格遵守稅務局的規定。",
+        "thirdCardTitle": "庫存管理",
+        "thirdCardDescription": "騰出儲存空間並安全處置過時或損壞的材料。"
+    },
+
+    "processTitle": "我們的流程圖",
+
+    "process": {
+        "description": "從接收到最終出具證書，技術精準度極高。",
+        "firstStepTitle": "應用與規劃",
+        "firstStepDescription": "客戶提出服務請求。我們負責協調並確定材料、數量、重量和收貨物流。",
+        "secondStepTitle": "安全收集",
+        "secondStepDescription": "我們的專業團隊直接從客戶場所移除材料，確保最大限度的安全。",
+        "thirdStepTitle": "接待及卸貨",
+        "thirdStepDescription": "我們會在自己的設施內接收並登記資料。我們會對流程進行嚴格的控制，並產生初步證據。",
+        "fourthStepTitle": "經認證銷毀",
+        "fourthStepDescription": "這些材料透過可控的工業流程進行徹底銷毀。",
+        "fivethStepTitle": "生態隔離",
+        "fivethStepDescription": "我們將產生的廢棄物分類和分離，以確保其正確回收或最終處置。",
+        "sixthStepTitle": "證據和證明",
+        "sixthStepDescription": "我們會提供一份完整的報告，其中包含照片證據、過程影片以及官方銷毀證明。"
+
+    },
+
+    "region": {
+        "title": "墨西哥戰略覆蓋",
+        "description": "我們在全國主要工業中心設有實體機構和物流網絡。憑藉我們的網絡，我們能夠提供覆蓋全國的快速響應和預約取貨服務。",
+        "center": "+10 個營運中心",
+        "centerDescription": "策略性收貨點和本地倉庫。",
+        "record": "創紀錄時間",
+        "recordDescription": "優化路線，確保按時取貨。"
+
+    },
+
+    "contactform": {
+        "contact": "接觸",
+        "location": "地點",
+        "email": "電子郵件",
+        "schedule": "行程",
+        "titleform": "如需更多信息，請隨時聯繫我們的團隊。",
+        "subtitleform": "",
+        "label_name": "姓名",
+        "label_phone": "電話",
+        "label_email": "電子郵件",
+        "placeholder_email": "correo@empresa.com.mx",
+        "label_service": "服務",
+        "placeholder_service": "選擇一個選項",
+        "option_consultory": "財政破壞",
+        "option_support": "廢棄物銷毀",
+        "option_marketing": "庫存銷毀",
+        "option_call": "安排通話",
+        "label_message": "資訊",
+        "placeholder_message": "在這裡寫下您的留言...",
+        "button": "傳送"
+    },
+
+    "about": {
+        "certified": "證書",
+        "garanticer": "保證",
+        "title": "您在戰略上的盟友 <span class='text-primary'>稅務銷毀</span>",
+        "description": "環境管理公司專注於經認證的報廢庫存和生產損失銷毀，是您滿足稅務合規銷毀需求的關鍵策略夥伴。我們以將嚴格監管的關鍵流程轉化為完全無憂的體驗而聞名。我們的營運基於三大支柱：全面安全、保密和環境責任，確保提供法律支持，並達到貴公司法規要求的最高安全和保密標準。",
+        "mision": "我們的使命",
+        "misionDescription": "我們提供可持續的先進技術解決方案，用於收集、銷毀和安全處置廢棄物和廢棄舊材料。我們保護客戶的機密訊息，減少對環境的影響，確保卓越的營運和合規性。",
+        "vision": "我們的願景",
+        "visionDescription": "鞏固我們在廢棄物和機密銷毀綜合管理方面的國家標桿，因我們的卓越營運、對循環經濟的積極承諾以及為每個客戶提供絕對的安心和信心而受到認可。",
+        "titlePillars": "基本工業價值觀",
+        "descriptionPillar": "為我們的策略指明方向，為我們的決策提供保障。",
+        "firstPillar": "永續性",
+        "firstPillarDescription": "我們優化回收利用，最大限度地減少浪費。",
+        "secondPillar": "保密性",
+        "secondPillarDescription": "我們會保護您的資訊和品牌。",
+        "thirdPillar": "責任",
+        "thirdPillarDescription": "完全遵守環境和健康法規。",
+        "fourthPillar": "透明度",
+        "fourthPillarDescription": "流程已記錄並獲批准，步驟詳盡。",
+        "titleSectionBenefit": "競爭優勢",
+        "descriptionSectionBenefit": "我們設計了一項綜合服務，將安全性、透明度和效率相結合，讓您可以完全掌控廢棄材料和廢棄物的處理。",
+        "firstBenefit": "品牌保護",
+        "firstBenefitDescription": "我們防止您退回的、過期的或有缺陷的商品流入非正規市場，從而保護您公司的聲譽和智慧財產權。",
+        "secondBenefit": "法律確定性和可追溯性",
+        "secondBenefitDescription": "我們保證透過認證流程徹底銷毀材料，並為您提供必要的法律和技術支援。",
+        "thirdBenefit": "具競爭力和高效的成本 ",
+        "thirdBenefitDescription": "價格實惠，品質卓越。我們致力於在不犧牲安全協議的前提下，最大程度地提升您的投資價值。",
+        "fourthBenefit": "立即回應",
+        "fourthBenefitDescription": "我們深知時間就是金錢。我們提供個人化服務和快速的物流，在您需要時移除並銷毀您的敏感材料。",
+        "etiquette": "未來永續性",
+        "titleCompromiso": "我們對環境的承諾不是一種目標，而是我們的一種經營方式。",
+        "descriptionCompromiso": "我們致力於促進永續發展，確保我們經營所在社區的福祉和正面影響。",
+        "etiquetteFirstCommitments": "2030年目標",
+        "titleFirstCommitments":"淨零排放行動",
+        "descriptionFirstCommitments": "我們優化物流和技術流程，以減少和抵消二氧化碳排放。",
+        "etiquetteSecondCommitments": "全球責任",
+        "titleSecondCommitments":"好好生活",
+        "descriptionSecondCommitments": "我們提倡愛護和尊重環境。我們不破壞環境；我們愛護我們獨特而脆弱的生命共同體。",
+        "etiquetteThirdCommitments": "生態完整性",
+        "titleThirdCommitments":"和平文化",
+        "descriptionThirdCommitments": "我們秉持《地球憲章》的原則，在關懷與合作的基礎上，培養寬容與和平的文化。"  
+    },
+
+    "benefitsTitle": "不僅僅是銷毀服務",
+
+    "benefit": {
+        "firstBenefitTitle": "毀滅期間在場",
+        "firstBenefitDescription": "我們為客戶提供見證銷毀過程的機會，從而確保客戶對其貨物的最終去向充滿信心。",
+        "secondBenefitTitle": "照片和影片證據",
+        "secondBenefitDescription": "我們使用照片和影片記錄每個流程，以便清晰透明地驗證服務的正確執行情況。",
+        "thirdBenefitTitle": "有據可查的監管鏈",
+        "thirdBenefitDescription": "我們對材料的收集到最終銷毀過程進行嚴格控制，始終保證可追溯性和安全性。",
+        "fourthBenefitTitle": "免費暫存",
+        "fourthBenefitDescription": "我們提供最多 30 天的臨時商品儲存服務，不收取額外費用，讓客戶在必要時可以安心地與 SAT 安排銷毀事宜。"
+
+    },
+    "Evidencetitle": "了解我們的工作方式",
+
+    "evidence": {
+        "descriptionEvidenceSection": "完全透明：記錄並證明每個銷毀過程。",
+        "firstEvidence": "過時的庫存",
+        "firstEvidenceDescription": "安全銷毀滯銷商品、過時商品和宣傳資料，保護您的品牌並釋放倉庫中的戰略空間。",
+        "secondEvidence": "死文件",
+        "secondEvidenceDescription": "我們對文件、檔案和非活動記錄進行保密處理和經認證的銷毀。我們保證在嚴格的安全標準下全面保護敏感資料。",
+        "thirdEvidence": "過期商品",
+        "thirdEvidenceDescription": "高效處置過期或召回產品。我們確保流程清潔，避免健康和商業風險。",
+        "fourthEvidence": "缺陷產品",
+        "fourthEvidenceDescription": "對存在製造錯誤、包裝錯誤或品質缺陷的批次進行停用和銷毀，防止其流入非正規市場。",
+        "fivethEvidence": "工業廢料",
+        "fivethEvidenceDescription": "依照環境法規，對有缺陷的電子元件、工業零件和剛性材料進行處理和規範銷毀。"
+    },
+
+    "services": {
+        "minititle": "企業解決方案",
+        "title": "銷毀和庫存管理服務",
+        "description": "我們保證在每個流程中都嚴格遵守法規和環境要求，保護您的品牌，並嚴格保密。",
+        "titleFirstCard": "財政破壞",
+        "descriptionFirstCard": "所有流程均嚴格遵守稅法規定。我們協助您合法扣除已失去商業價值的貨物的價值。",
+        "titleSecondCard": "損失的破壞",
+        "descriptionSecondCard": "專門處理生產廢料和瑕疵庫存。我們對不符合標準的產品進行中和處理，以防止品牌稀釋和未經授權的轉售。",
+        "titleThirdCard": "銷毀過時庫存",
+        "descriptionThirdCard": "安全處置過時、損壞或有缺陷的產品。我們防止商品流入非正規市場，從而保護您的品牌聲譽。",
+        "firstItem": "100% 遵守當局規定。",
+        "secondItem": "提交會議記錄和視訊證據。",
+        "thirdItem": "",
+        "fourthItem": "工業廢料和有效期限。",
+        "fivethItem": "物流和定期收貨。",
+        "sixthItem": "廢棄物可完全追溯。",
+        "seventhItem": "原料和成品.",
+        "eigthItem": "不可逆的機械過程。",
+        "ninethItem": "報廢後材料的回收。",
+        "subtitleCard": "環境影響", 
+        "titleSubCard": "84% 回收利用",
+        "descriptionSubCard": "根據我們的廢棄物處理規程處理的材料，從傳統的廢棄物流中轉移到二次材料循環。",
+
+        "subtitleFiscal": "法律和授權合規",
+        "descriptionCardFiscal": "我們嚴格遵守SAT法規，對已失去商業價值的庫存進行經認證的銷毀。我們的團隊負責處理官方文件並整理完整的檔案。",
+        "subtitleMerma": "營運和工業效率",
+        "descriptionCardMerma": "我們保護您的智慧財產權，並防止缺陷副產品流入黑市或洩漏。我們設計包裝容器，並提供直接到您工廠的物流服務。",
+        "subtitleInventario": "資產和空間優化",
+        "descriptionCardInventario": "消除倉儲成本，保持帳目清晰。我們以完全透明的方式管理過期成品、過時技術或陳舊包裝的庫存。",
+        "minititleCard":"零",
+        "miniDescriptionCard": "銷毀證明",
+        "minidescriptionCardS": "洩漏風險" 
+        
+    }
+}

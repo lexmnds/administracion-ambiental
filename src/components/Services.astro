@@ -1,0 +1,268 @@
+---
+const { t }= Astro.props;
+
+const itemsFirst = [
+    {title: t.services.firstItem},
+    {title: t.services.secondItem},
+    /*{title: t.services.thirdItem},*/
+];
+
+const itemsSecond = [
+    {title: t.services.fourthItem},
+    {title: t.services.fivethItem},
+    {title: t.services.sixthItem},
+
+];
+
+const itemsThird=[
+    {title: t.services.seventhItem},
+    {title: t.services.eigthItem},
+    {title: t.services.ninethItem},
+];
+---
+<!-- Sección de Servicios -->
+    <section class="py-16 px-4 max-w-7xl mx-auto">
+        
+        <!-- Encabezado -->
+        <div class="text-center mb-6">
+            <span class="text-primary font-semibold tracking-wide uppercase text-sm">{t.services.minititle}</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">
+                {t.services.title}
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                {t.services.description}
+            </p>
+            <div class="w-24 h-1 bg-secondary mx-auto mt-6 rounded-full"></div>
+        </div>
+
+        
+
+        <!-- Grid de Servicios -->        
+        <!--<div class="flex flex-col lg:flex-row items-stretch bg-gray-default rounded-xl overflow-hidden shadow-xl border border-gray-100 min-h-[340px]">
+            <div class="flex-1 p-8 lg:p-12 flex flex-col justify-center">
+                <h2 class="text-2xl font-bold text-primary mb-4">{t.services.titleFirstCard}</h2>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-8 max-w-xl">
+                    {t.services.descriptionFirstCard}
+                </p>
+                <ul class="space-y-4">
+                    {itemsFirst.map((item)=>(
+                        <li class="flex items-center text-sm font-medium text-gray-700">
+                            <span class="w-8 h-8 rounded-lg bg-gray-200 flex items-center justify-center mr-3 text-gray-600 text-sm">
+                                <i class="fa-solid fa-check text-secondary"></i>
+                            </span>
+                            {item.title}
+                        </li>
+                    ))}              
+                </ul>
+            </div>
+            <div class="w-full lg:w-[45%] relative min-h-[260px] lg:min-h-auto bg-gray-900">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800" 
+                    alt="Destrucción Fiscal" 
+                    class="absolute inset-0 w-full h-full object-cover opacity-75 mix-blend-luminosity">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
+        </div>
+
+        <hr class="h-px my-8 bg-neutral-quaternary border-0">
+
+        <div class="flex flex-col lg:flex-row items-stretch bg-gray-default rounded-xl overflow-hidden shadow-xl border border-gray-100 min-h-[340px]">
+            <div class="flex-1 p-8 lg:p-12 flex flex-col justify-center">
+                <h2 class="text-2xl font-bold text-primary mb-4">{t.services.titleSecondCard}</h2>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-8 max-w-xl">
+                    {t.services.descriptionSecondCard}
+                </p>
+                <ul class="space-y-4">
+                    {itemsSecond.map((item)=>(
+                        <li class="flex items-center text-sm font-medium text-gray-700">
+                            <span class="w-8 h-8 rounded-lg bg-gray-200 flex items-center justify-center mr-3 text-gray-600 text-sm">
+                                <i class="fa-solid fa-check text-secondary"></i>
+                            </span>
+                            {item.title}
+                        </li>
+                    ))}  
+                </ul>
+            </div>
+            <hr class="h-px my-8 bg-neutral-quaternary border-0">
+            <div class="w-full lg:w-[26%] bg-[#041611] text-white p-8 flex flex-col justify-between border-t lg:border-t-0 lg:border-l lg:border-r border-emerald-950/20">
+                <div>
+                    <span class="text-[10px] uppercase tracking-widest text-emerald-400 font-semibold">{t.services.subtitleCard}</span>
+                    <div class="text-4xl font-bold mt-2 mb-4">{t.services.titleSubCard}</div>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        {t.services.descriptionSubCard}
+                    </p>
+                </div>
+                <div class="flex gap-2 mt-8">
+                    <div class="h-1 flex-1 bg-emerald-500 rounded-full"></div>
+                    <div class="h-1 flex-1 bg-neutral-800 rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-[24%] relative min-h-[180px] lg:min-h-auto bg-neutral-800">
+                <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&q=80&w=600" 
+                     alt="Material procesado" 
+                     class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-90">
+            </div>
+        </div>
+        <hr class="h-px my-8 bg-neutral-quaternary border-0">
+
+        <div class="flex flex-col lg:flex-row items-stretch bg-gray-default rounded-xl overflow-hidden shadow-xl border border-gray-100 min-h-[340px]">
+            <div class="flex-1 p-8 lg:p-12 flex flex-col justify-center">
+                <h2 class="text-2xl font-bold text-primary mb-4">{t.services.titleThirdCard}</h2>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-8 max-w-xl">
+                    {t.services.descriptionThirdCard}
+                </p>
+                <ul class="space-y-4">
+                    {itemsThird.map((item)=>(
+                        <li class="flex items-center text-sm font-medium text-gray-700">
+                            <span class="w-8 h-8 rounded-lg bg-gray-200 flex items-center justify-center mr-3 text-gray-600 text-sm">
+                                <i class="fa-solid fa-check text-secondary"></i>
+                            </span>
+                            {item.title}
+                        </li>
+                    ))} 
+                </ul>
+            </div>
+            <div class="w-full lg:w-[50%] relative min-h-[280px] lg:min-h-auto flex items-center justify-center group">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000" 
+                     alt="Logística de Almacén" 
+                     class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gray-900/10 transition-colors group-hover:bg-gray-900/20"></div>
+                
+            </div>
+        </div>-->
+
+    </section>
+
+<section class="relative min-h-screen flex flex-col lg:flex-row items-stretch border-b border-gray-200">
+    <div class="w-full lg:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center sticky top-0 bg-gray-200">
+      <div class="max-w-xl">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="text-5xl font-light text-emerald-600/50 font-mono">01</span>
+          <div class="h-[1px] w-12 bg-emerald-500/50"></div>
+          <span class="text-xs uppercase tracking-widest text-emerald-700 font-bold">{t.services.subtitleFiscal}</span>
+        </div>
+        
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">{t.services.titleFirstCard}</h2>
+        
+        <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+            {t.services.descriptionCardFiscal}
+        </p>
+        
+        <ul class="space-y-3 text-sm text-gray-600 border-l-2 border-emerald-500/40 pl-4 mb-8">
+            {itemsFirst.map((item)=>(
+                <li class="flex items-center text-sm font-medium text-gray-800">
+                    {/* El contenedor del check ahora es verde suave con icono verde oscuro */}
+                    <span class="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center mr-3 border border-emerald-200">
+                        <i class="fa-solid fa-check text-emerald-600"></i>
+                    </span>
+                    {item.title}
+                </li>
+            ))}   
+        </ul>
+        
+        </div>
+    </div>
+    <div class="w-full lg:w-1/2 relative bg-gray-200 min-h-[400px] lg:min-h-0 overflow-hidden">
+        <img src="https://dimdestruccion.com/wp-content/uploads/2022/07/destruccionmercancias.jpeg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-90 transition-all hover:scale-105 duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent lg:bg-gradient-to-r lg:from-gray-200 lg:via-transparent"></div>
+        <div class="absolute bottom-8 right-8 bg-gray-200 backdrop-blur border border-gray-200 p-4 rounded-xl shadow-sm text-xs text-gray-600 max-w-xs hidden sm:block">
+            <p class="font-bold text-gray-900 mb-1 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Módulo de Control Técnico
+            </p>
+            Registro en video HD en tiempo real para evidencias deducibles de impuestos.
+        </div>
+    </div>
+</section>
+
+  {/* SECCIÓN 2: DESTRUCCIÓN DE MERMA (DISEÑO INVERTIDO) */}
+<section class="relative min-h-screen flex flex-col lg:flex-row-reverse items-stretch border-b border-gray-200">
+    {/* Columna Texto */}
+    <div class="w-full lg:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center sticky top-0 bg-gray-200">
+      <div class="max-w-xl">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="text-5xl font-light text-secondary font-mono">02</span>
+          <div class="h-[1px] w-12 bg-secondary"></div>
+          <span class="text-xs uppercase tracking-widest text-secondary font-bold">{t.services.subtitleMerma}</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">{t.services.titleSecondCard}</h2>
+        <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+            {t.services.descriptionCardMerma}
+        </p>
+        <ul class="space-y-3 text-sm text-slate-400 border-l-2 border-gray-200 pl-4 mb-8">
+            {itemsSecond.map((item)=>(
+                        <li class="flex items-center text-sm font-medium text-gray-800">
+                            <span class="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center mr-3 border border-emerald-200">
+                                <i class="fa-solid fa-check text-secondary"></i>
+                            </span>
+                            {item.title}
+                        </li>
+            ))} 
+          <!--<li class="flex items-center gap-2">✔ Trituración y compactación de materiales no conformes.</li>
+          <li class="flex items-center gap-2">✔ Recolección programada en líneas de producción.</li>
+          <li class="flex items-center gap-2">✔ Enfoque de economía circular (revalorización de residuos post-destrucción).</li>-->
+        </ul>
+      </div>
+    </div>
+    
+    {/* Columna Video / Multimedia */}
+    <div class="w-full lg:w-1/2 relative bg-gray-200 min-h-[400px] lg:min-h-0 overflow-hidden">
+        <img src="/servicio-destruccion-merma.webp" alt="Destrucción de merma" class="absolute inset-0 w-full h-full object-cover opacity-90 transition-all hover:scale-105 duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent lg:bg-gradient-to-l lg:from-gray-200 lg:via-transparent"></div>
+    </div>
+  </section>
+
+  {/* SECCIÓN 3: INVENTARIO OBSOLETO (DISEÑO DE TEXTO FLUIDO E IMPACTO VISUAL) */}
+  <section class="relative min-h-screen flex flex-col lg:flex-row items-stretch">
+    {/* Columna Texto */}
+    <div class="w-full lg:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center sticky top-0 bg-gray-200">
+      <div class="max-w-xl">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="text-5xl font-light text-primary/80 font-mono">03</span>
+          <div class="h-[1px] w-12 bg-primary/80"></div>
+          <span class="text-xs uppercase tracking-widest text-primary/80 font-bold">{t.services.subtitleInventario}</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6 tracking-tight">{t.services.titleThirdCard}</h2>
+        <p class="text-gary-600 mb-6 leading-relaxed text-lg">
+        {t.services.descriptionCardInventario}
+        </p>
+        <div class="grid grid-cols-2 gap-4 my-6 text-gray-800 text-xs uppercase tracking-wider font-mono">
+          <div class="border border-primary p-3 bg-gray-200">
+            <span class="block text-primary font-bold text-lg mb-1">100%</span> {t.services.miniDescriptionCard}
+          </div>
+          <div class="border border-primary p-3 bg-gray-200">
+            <span class="block text-primary font-bold text-lg mb-1">{t.services.minititleCard}</span>{t.services.minidescriptionCardS}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {/* Columna Video / Multimedia */}
+    <div class="w-full lg:w-1/2 relative bg-slate-900 min-h-[400px] lg:min-h-0 overflow-hidden">
+        <img src="/archivo-muerto-servicio.webp" class="absolute inset-0 w-full h-full object-cover opacity-90 transition-all hover:scale-105 duration-500" alt="">
+        <!--<video 
+        autoplay 
+        loop 
+        muted 
+        playsinline 
+        class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-luminosity hover:mix-blend-normal transition-all "
+      >
+        <source src="https://www.youtube.com/watch?v=fY70auTbYvQ" type="video/mp4" />
+      </video>-->
+      <div class="absolute inset-0 bg-gradient-to-t from-gray-200 via-transparent to-transparent lg:bg-gradient-to-r lg:from-gray-200 lg:via-transparent"></div>
+    </div>
+
+    
+  </section>
+<!-- Sección de Proceso Corto / CTA -->
+        <!--<div class="mt-16 bg-blue-950 text-white rounded-2xl p-8 md:p-12 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <h4 class="text-xl md:text-2xl font-bold mb-2">¿Necesita un certificado de destrucción oficial?</h4>
+                <p class="text-blue-200 text-sm md:text-base max-w-xl">
+                    Todos nuestros servicios incluyen reportes fotográficos, videos y el acta correspondiente para sus auditorías internas y fiscales.
+                </p>
+            </div>
+            <a href="#" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-xl transition-colors whitespace-nowrap shadow-lg">
+                Solicitar Cotización
+            </a>
+        </div>-->

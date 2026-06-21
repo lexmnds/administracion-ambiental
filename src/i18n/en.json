@@ -1,0 +1,216 @@
+{
+    "navbar": {
+        "home": "Home",
+        "services": "Services",
+        "firstService": "Fiscal Destruction",
+        "secondService": "Inventory Destruction",
+        "thirdService": "Waste Destruction",
+        "about": "About Us",
+        "contact": "Contact",
+        "spanish": "Spanish (MX)",
+        "english": "English (US)", 
+        "chinese": "Chinese (China)",
+        "button": "Request Proposal"
+
+    },
+    
+    "footer": {
+        "titleCardCallSection": "Your obsolete inventory in expert hands",
+        "textCardCallSection": "Total physical destruction with an eco-friendly approach. We separate and recycle the resulting waste to protect your brand and care for the environment.",
+        "text": "SECURITY | CONFIDENTIALITY | ENVIRONMENTAL RESPONSIBILITY",
+        "call": "Schedule a call",
+        "cotization": "Request a quote",
+        "slogan": "Sustainable solutions in corporate destruction.",
+        "services": "Services",
+        "firstService": "Fiscal destruction",
+        "secondService": "Inventory destruction",
+        "thirdService": "Waste destruction",
+        "contact": "Contact",
+        "legal": "Privacy Notice",
+        "dirección": ""
+
+    },
+
+    "hero": {
+        "title": "Secure tax destruction, permanent ecological commitment",
+        "subtitle": "We guarantee regulatory compliance and reduce environmental impact in one step.",
+        "video": "Play",
+        "contact": "Contact now",
+        "titleCard":"For every service performed, we plant a tree.",
+        "descriptionCard": "Through our strategic alliance with reforestation programs, we neutralize the carbon footprint of each industrial destruction process.",
+        "miniCardTitle": "15k+",
+        "miniCardDescription": "PLANTED TREES"
+    },
+
+    "cardServices": {
+        "title": "Our specialties",
+        "firstCardTitle": "Waste destruction",
+        "firstCardDescription": "Efficient management of production waste to optimize your operational processes and reduce environmental impact.",
+        "secondCardTitle": "Fiscal destruction",
+        "secondCardDescription": "Legal guarantee and strict compliance with the SAT for assets and products subject to tax benefits.",
+        "thirdCardTitle": "Inventory Management",
+        "thirdCardDescription": "Freeing up storage space and safe disposal of obsolete or damaged materials."
+    },
+
+    "processTitle": "Our Flow Methodology",
+
+    "process": {
+        "description": "Technical precision from reception to final certificate.",
+        "firstStepTitle": "Application and planning",
+        "firstStepDescription": "The client requests the service. We coordinate and define the materials, quantities, weight, and collection logistics.",
+        "secondStepTitle": "Safe collection",
+        "secondStepDescription": "Our specialized team removes the material directly from the client's premises, guaranteeing maximum safety.",
+        "thirdStepTitle": "Reception and unloading",
+        "thirdStepDescription": "We receive and register the material at our facilities. We generate rigorous control and initial evidence of the process.",
+        "fourthStepTitle": "Certified destruction",
+        "fourthStepDescription": "The materials undergo total destruction through controlled industrial processes.",
+        "fivethStepTitle": "Ecological segregation",
+        "fivethStepDescription": "We classify and separate the resulting waste to ensure its proper recycling or final disposal.",
+        "sixthStepTitle": "Evidence and certification",
+        "sixthStepDescription": "We deliver a complete report with photographic evidence, videos of the process, and the official certificate of destruction."
+
+    },
+
+    "region": {
+        "title": "Strategic coverage in Mexico",
+        "description": "Physical presence and logistics in the country's main industrial centers. Our network allows us to offer unbeatable response times and scheduled pickups throughout the country.",
+        "center": "+10 Operational Centers",
+        "centerDescription": "Strategic collection points and local warehouses.",
+        "record": "Record Times",
+        "recordDescription": "Optimized routes to guarantee scheduled pickups."
+
+    },
+
+    "contactform": {
+        "contact": "Contact",
+        "location": "Location",
+        "email": "Email",
+        "schedule": "Schedule",
+        "titleform": "For more information, please do not hesitate to contact our team.",
+        "subtitleform": "",
+        "label_name": "Name",
+        "label_phone": "Number phone",
+        "label_email": "Email",
+        "placeholder_email": "email@company.com.mx",
+        "label_service": "Service",
+        "placeholder_service": "Select an option",
+        "option_consultory": "Fiscal destruction",
+        "option_support": "Waste destruction",
+        "option_marketing": "Inventory destruction",
+        "option_call": "Schedule a call",
+        "label_message": "Message",
+        "placeholder_message": "Write your message here...",
+        "button": "Send"
+    },
+
+    "about": {
+        "certified": "CERTIFIED",
+        "garanticer": "GUARANTEED",
+        "title": "Your strategic ally in <span class='text-primary'>Fiscal Destructions</span>",
+        "description": "At Environmental Management, we specialize in the certified destruction of <span class='font-bold'> obsolete inventory and production losses</span>, serving as your key strategic partner for the execution of your <span class='font-bold'>tax-compliant destruction</span>. We distinguish ourselves by transforming a critical and strictly regulated procedure into a completely stress-free experience. Our operations are based on three pillars: total security, confidentiality, and environmental responsibility, ensuring legal support and the highest standards of security and confidentiality required by your company's regulations.",
+        "mision": "Our Mission",
+        "misionDescription": "We provide sustainable and technological solutions for the collection, destruction, and safe disposal of waste and obsolete materials. We protect our clients' confidential information and mitigate environmental impact, ensuring operational excellence and regulatory compliance.",
+        "vision": "Our Vission",
+        "visionDescription": "Consolidate ourselves as the national benchmark in the comprehensive management of waste and confidential destruction, being recognized for the excellence of our operation, our active commitment to the circular economy and for providing absolute peace of mind and confidence to each client.",
+        "titlePillars": "Fundamental Industrial Values",
+        "descriptionPillar": "The guide that gives direction to our strategies and solidity to our decisions.",
+        "firstPillar": "Sustainability",
+        "firstPillarDescription": "We optimize recycling and minimize waste.",
+        "secondPillar": "Confidentiality",
+        "secondPillarDescription": "Your information and your brand are protected with us.",
+        "thirdPillar": "Responsibility",
+        "thirdPillarDescription": "Full compliance with environmental and health regulations.",
+        "fourthPillar": "Transparency",
+        "fourthPillarDescription": "Documented and approved processes, step by step.",
+        "titleSectionBenefit": "Competitive Advantages",
+        "descriptionSectionBenefit": "We designed a comprehensive service that combines security, transparency, and efficiency to give you total control over the disposal of your obsolete materials and waste.",
+        "firstBenefit": "Brand protection",
+        "firstBenefitDescription": "We prevent your rejected, expired, or defective merchandise from returning to the informal market, protecting your company's reputation and intellectual property.",
+        "secondBenefit": "Legal certainty and traceability",
+        "secondBenefitDescription": "We guarantee the complete destruction of materials through certified processes, providing you with the necessary legal and technical support.",
+        "thirdBenefit": "Competitive and efficient costs ",
+        "thirdBenefitDescription": "Affordable solutions with premium quality. We maximize the value of your investment without compromising security protocols.",
+        "fourthBenefit": "Immediate response",
+        "fourthBenefitDescription": "We know that time is money. We offer personalized service and fast logistics to remove and destroy your sensitive material when you need us to.",
+        "etiquette": "Future sustainability",
+        "titleCompromiso": "Our commitment to the environment is not a goal, it is our way of operating.",
+        "descriptionCompromiso": "We are committed to promoting sustainable development, ensuring well-being and a positive impact in each of the communities where we operate.",
+        "etiquetteFirstCommitments": "Goal 2030",
+        "titleFirstCommitments":"Operation Net-Zero",
+        "descriptionFirstCommitments": "We optimize our logistics and technological processes to mitigate and neutralize CO₂ emissions.",
+        "etiquetteSecondCommitments": "Global Responsibility",
+        "titleSecondCommitments":"Take care of life",
+        "descriptionSecondCommitments": "We promote care and respect for the environment. We don't destroy; we care for our unique and fragile community of life.",
+        "etiquetteThirdCommitments": "Ecological Integrity",
+        "titleThirdCommitments":"Culture of Peace",
+        "descriptionThirdCommitments": "We cultivate a culture of tolerance and peace, based on care and cooperation, in accordance with the principles of the Earth Charter."  
+    },
+
+    "benefitsTitle": "More than a destruction service",
+
+    "benefit": {
+        "firstBenefitTitle": "Presence during the destruction",
+        "firstBenefitDescription": "We offer the possibility for the client to witness the destruction process, providing certainty and confidence about the final destination of their goods.",
+        "secondBenefitTitle": "Photographic and video evidence",
+        "secondBenefitDescription": "We document each process through photographs and videos that allow us to clearly and transparently verify the correct execution of the service.",
+        "thirdBenefitTitle": "Documented chain of custody",
+        "thirdBenefitDescription": "We maintain rigorous control of the material from its collection to its final destruction, guaranteeing traceability and security at all times.",
+        "fourthBenefitTitle": "Free temporary storage",
+        "fourthBenefitDescription": "We offer temporary merchandise storage for up to 30 days at no additional cost, allowing the customer to calmly manage the scheduling of destruction with the SAT when necessary."
+
+    },
+
+    "Evidencetitle": "See how we work",
+
+    "evidence": {
+        "descriptionEvidenceSection": "Total transparency: records and certifies every destruction process.",
+        "firstEvidence": "Obsolete inventories",
+        "firstEvidenceDescription": "Secure destruction of out-of-market merchandise, obsolete goods and promotional materials, protecting your brand and freeing up strategic space in your warehouses.",
+        "secondEvidence": "Dead file",
+        "secondEvidenceDescription": "Confidential handling and certified shredding of documents, files, and inactive records. We guarantee the complete protection of sensitive data under strict security standards.",
+        "thirdEvidence": "Expired products",
+        "thirdEvidenceDescription": "Efficient disposal of expired or recalled products. We ensure a clean process that prevents health and commercial risks.",
+        "fourthEvidence": "Defective products",
+        "fourthEvidenceDescription": "Disabling and destroying batches with manufacturing errors, incorrect packaging or quality failures, preventing their infiltration into the informal market.",
+        "fivethEvidence": "Industrial waste",
+        "fivethEvidenceDescription": "Regulated processing and destruction of defective electronic components, industrial parts and rigid materials, in full compliance with environmental regulations."
+    },
+
+    "services": {
+        "minititle": "Corporate Solutions",
+        "title": "Destruction and Inventory Management Services",
+        "description": "We guarantee confidentiality, brand protection, and strict regulatory and environmental compliance in every process.",
+        "titleFirstCard": "Fiscal Destructions",
+        "descriptionFirstCard": "Procedures strictly adhere to tax regulations. We help you legally deduct the value of goods that have lost their commercial value.",
+        "titleSecondCard": "Waste destruction",
+        "descriptionSecondCard": "Specialized handling of production waste and defective inventory. We neutralize products that do not meet standards to prevent brand dilution and unauthorized resale.",
+        "titleThirdCard": "Destruction of Obsolete Inventory",
+        "descriptionThirdCard": "Safe disposal of obsolete, damaged, or defective products. We protect your brand's reputation by preventing merchandise from ending up in informal markets.",
+        "firstItem": "100% legal compliance with the authorities.",
+        "secondItem": "Delivery of minutes and video evidence.",
+        "thirdItem": "",
+        "fourthItem": "Industrial waste and expiration dates.",
+        "fivethItem": "Logistics and scheduled collection.",
+        "sixthItem": "Complete traceability of the waste.",
+        "seventhItem": "Raw materials and finished products.",
+        "eigthItem": "Irreversible mechanical processes.",
+        "ninethItem": "Recycling of post-destruction materials.",
+        "subtitleCard": "Environmental impact", 
+        "titleSubCard": "84% recycling",
+        "descriptionSubCard": "Materials processed under our Merma protocol are diverted from traditional waste streams into secondary material cycles.",
+
+        "subtitleFiscal": "Legal and Authorized Compliance",
+        "descriptionCardFiscal": "We carry out the certified destruction of inventories that have lost their commercial value, strictly adhering to SAT regulations. Our team handles the official documentation and the compilation of the complete file.",
+        "subtitleMerma": "Operational and Industrial Efficiency",
+        "descriptionCardMerma": "We protect your intellectual property and prevent the black market or leakage of defective byproducts. We design containers and provide direct logistics insourcing at your manufacturing plant.",
+        "subtitleInventario": "Asset and space optimization",
+        "descriptionCardInventario": "Eliminate storage costs and keep your accounting records clean. We manage batches of expired finished products, obsolete technology, or outdated packaging with complete corporate transparency.",
+        "minititleCard":"ZERO",
+        "miniDescriptionCard": "CERTIFICATES OF DESTRUCTION",
+        "minidescriptionCardS": "RISK OF LEAKAGE" 
+        
+    }
+
+
+
+}

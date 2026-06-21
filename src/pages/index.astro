@@ -1,0 +1,30 @@
+---
+import es from "../i18n/es.json";
+import Layout from '../layouts/Layout.astro';
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Hero from "../components/Hero.astro";
+import CardServices from "../components/CardServices.astro";
+import Process from "../components/Process.astro";
+import Region from "../components/Region.astro";
+import Benefits from "../components/Benefits.astro";
+import Evidence from "../components/Evidence.astro";
+
+---
+
+<Layout title="Inicio">
+	<Navbar t={es} />
+	<Hero t={es} />
+	<SectionContainer>
+		<CardServices t={es} />
+		<Process t={es} />
+		<Benefits t={es} />
+		<Evidence t={es} />
+		
+		
+
+	</SectionContainer>
+	<Region t={es}/> 
+	<Footer t ={es} />
+</Layout>

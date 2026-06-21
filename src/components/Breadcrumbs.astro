@@ -1,0 +1,72 @@
+---
+import { getAbsoluteLocaleUrl } from "astro:i18n";
+type Crumb= {label:string, href: string};
+const { t, lang="es" }=Astro.props;
+const pathname = Astro.url.pathname;
+const allSegments = pathname.split("/").filter(Boolean);
+
+//Detectar idioma desde la ruta
+const basePathLanguages = ["es", "en", "ch"];
+const hasLang = allSegments.length && basePathLanguages.includes(allSegments[0]);
+const langPrefix = hasLang ? `/${allSegments[0]}` : "";
+
+let segments = hasLang ? allSegments.slice(1) : allSegments;
+
+const labelMap : Record<string, string> = {
+    "contacto": t.breadcrumbs?.contact,
+    "nosotros": t.breadcrumbs?.about,
+    "servicios": t.breadcrumbs?.services,
+    "privacidad": "Aviso de privacidad",
+
+    //EN INGLÉS
+    "contact": t.breadcrumbs?.contact,
+    "about": "About us",
+    "services": t.breadcrumbs?.services,
+    "privacy": "Privacy Notice",
+}
+
+const crumbs: Crumb[] = [
+    { label: t.breadcrumbs?.home ?? (langPrefix === "/en" ? "Home": "Inicio"), href: langPrefix || "/" },
+
+    ...segments.map((segment, index) => {
+        const href = `${langPrefix}/` + segments.slice(0, index + 1).join("/");
+        const label = 
+            labelMap[segment] ?? 
+            segment
+                .replace(/-/g, " ")
+                .replace(/\b\w/g, (c) => c.toUpperCase());
+
+        return {label, href};
+    }),
+];
+
+const lastIndex = crumbs.length - 1;
+const title = t.breadcrumbs?.title ?? crumbs[lastIndex]?.label ?? "";
+---
+
+<div class="container mx-auto flex flex-col items-left space-y-16 mt-8">
+    <nav class="flex" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                { crumbs.map((c, idx) => 
+                idx !== lastIndex ? (
+                    <li class="inline-flex items-center">
+                        <a href={c.href} class="inline-flex items-center text-sm font-medium text-body hover:text-gray-soft text-gray-dark">
+                            { idx === 0 ?(
+                                <svg class="w-4 h-4 me-1.5 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/></svg>
+                            ): null}
+                            {c.label}
+                        </a>
+                    </li>
+                ) : (
+                    <li aria-current="page">
+                        <div class="flex items-center space-x-1.5">
+                            <svg class="w-3.5 h-3.5 rtl:rotate-180 text-gray-light" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+                            <span class="inline-flex items-center text-sm text-bold font-medium text-primary-soft">{crumbs[lastIndex].label}</span>
+
+                        </div>
+                    </li>
+                )
+                )}
+            </ol>
+        </nav>
+</div>

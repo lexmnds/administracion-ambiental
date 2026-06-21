@@ -1,0 +1,16 @@
+---
+import es from "../i18n/es.json";
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import About from "../components/About.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+
+---
+<Layout title="Nosotros">
+    <Navbar t={es}/>
+    <!--<Breadcrumbs t={es}/>-->
+    <About t={es} />
+
+    <Footer t={es}/>
+</Layout>

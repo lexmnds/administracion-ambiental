@@ -1,0 +1,167 @@
+---
+import SectionContainer from "./SectionContainer.astro";
+const { t }= Astro.props;
+const pillars = [
+    {icon: 'fa-leaf', title: t.about.firstPillar, description: t.about.firstPillarDescription},
+    {icon: 'fa-shield-halved', title: t.about.secondPillar, description: t.about.secondPillarDescription},
+    {icon: 'fa-award', title: t.about.thirdPillar, description: t.about.thirdPillarDescription},
+    {icon: 'fa-window-restore', title: t.about.fourthPillar, description: t.about.fourthPillarDescription},
+    
+];
+
+const benefits= [
+    {icon: 'fa-registered', title:t.about.firstBenefit , description: t.about.firstBenefitDescription},
+    {icon: 'fa-file-signature', title:t.about.secondBenefit , description: t.about.secondBenefitDescription},
+    {icon: 'fa-hand-holding-dollar', title:t.about.thirdBenefit , description: t.about.thirdBenefitDescription},
+    /*{icon: 'fa-bolt', title:t.about.fourthBenefit , description: t.about.fourthBenefitDescription},*/
+
+];
+
+const commitments = [
+    { imagen: '/meta-2030.webp', icon: 'fa-leaf', etiquette: t.about.etiquetteFirstCommitments, title: t.about.titleFirstCommitments, description: t.about.descriptionFirstCommitments},
+    { imagen: '/responsabilidad-global.webp', icon: 'fa-earth-americas', etiquette: t.about.etiquetteSecondCommitments , title: t.about.titleSecondCommitments, description: t.about.descriptionSecondCommitments},
+    { imagen: '/carta-tierra.webp', icon: 'fa-tree', etiquette: t.about.etiquetteThirdCommitments, title: t.about.titleThirdCommitments, description: t.about.descriptionThirdCommitments},
+]
+
+
+---
+<div class="py-12 bg-secondary/50 bg-blend-multiply mb-6">
+    <div class="mx-auto px-4 lg:px-6">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+            <!--CONTENIDO IZQUIERDA -->
+            <div class="w-full md:w-1/2 text-primary order-2 md:order-1">
+                <figure class="relative w-full h-full  group">
+                    <img src="/nosotros.png" alt="Nosotros Imagen" class="w-full h-64 md:h-[500px] object-cover rounded-3xl shadow-lg" />
+                    <div class="absolute -bottom-6 -right-6 bg-white p-5 rounded-2xl shadow-2xl border border-gray-100 flex items-center gap-4 z-10 hidden md:flex animate-fade-up">
+                        <div class="bg-primary-soft/50 p-3 rounded-xl text-secondary-dark">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <div>
+                            <p class="text-slate-900 font-bold text-xl leading-none mb-2">{t.about.certified}</p>
+                            <p class="text-gray-500 text-xs font-bold uppersace tracking-widest mt-1">{t.about.garanticer}</p>
+                        </div>
+                    </div>
+                </figure>
+
+                
+            </div>
+            <!--CONTENIDO DERECHA -->
+            <div class="w-full md:w-1/2 relative order-1 md:order-2">
+                <h5 class="text-3xl md:text-5xl font-extrabold tracking-tight text-gray-dark mb-6 text-balance" set:html={t.about.title}></h5>
+                <p class="mg-4 text-dark md:text-lg" set:html={t.about.description}></p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<SectionContainer>
+    <div data-aos="fade-up" data-aos-duration="3000" class="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-2 gap-6 text-center items-stretch mb-4">
+        <div class="flex flex-col items-center bg-gray-default  border border-primary p-4 rounded-lg">
+            <i class="fa-regular fa-flag text-4xl text-primary"></i>
+            <h5 class="mb-0.5 text-3xl font-semibold tracking-tight text-primary">{t.about.mision}</h5>
+            <span class="text-xl text-primary px-6 py-6">
+                {t.about.misionDescription}
+            </span>
+        </div>
+        <div data-aos="fade-up"data-aos-duration="3000" class="flex flex-col items-center bg-primary p-4 rounded-lg">
+            <i class="fa-regular fa-eye text-4xl text-white"></i>
+            <h5 class="mb-0.5 text-3xl font-semibold tracking-tight text-white">{t.about.vision}</h5>
+            <span class="text-xl text-white px-6 py-6">{t.about.visionDescription}</span>
+        </div>
+    </div>
+<!--VALORES -->
+<div class="py-12 bg-blend-multiply rounded-base max-w-full">
+    <!-- <div class="container mx-auto px-6 lg:px-16 items-center justify-center">-->
+        <!--<SectionTitle title={t.benefitsTitle} />-->
+        <h2 class="text-3xl font-bold mb-4 md:text-4xl lg:text-5xl leading-tight text-center text-secondary" set:html={t.about.titlePillars}></h2>
+        <p class="text-gray-dark mb-6 text-center text-lg">{t.about.descriptionPillar}</p>
+        <div class="grid grid-cols-1 md:grid-cols-4 mb-6 gap-4 justify-items-center">
+            {pillars.map((pillar) => (
+                <div data-aos="flip-right" class="flex flex-col mb-3 h-full bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xl">
+                    <div class="bg-secondary/50 p-3 rounded-base w-12 mb-2">
+                        <i class={`fa-solid ${pillar.icon} text-primary text-xl`}></i>
+                    </div>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">{pillar.title}</h5>
+                    <p class="mb-3 text-gray-800">{pillar.description}</p>                
+                </div>
+            ))}
+        </div>
+    <!--</div>-->
+</div>
+</SectionContainer>
+<div class="py-12 bg-gray-default bg-blend-multiply mb-3">
+    <div class="container mx-auto px-6 lg:px-16">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+
+            <!--Imagen izquierda -->
+            <div class="w-full md:w-1/2">
+                <img data-aos="fade-right" src="/benefits.webp" alt="Beneficios" class="w-full h-64 md:h-full object-cover rounded-base">
+            </div>
+
+            <!--Contenido derecha -->
+            <div class="w-full md:w-1/2 text-primary">
+                <h5 class="text-2xl md:text-3xl font-bold mb-4">
+                    {t.about.titleSectionBenefit}
+                </h5>
+                <p class="mb-6 text-base text-gray-dark md:text-lg"> { t.about.descriptionSectionBenefit }</p>
+
+                <div class="flex flex-col gap-6">
+                    {benefits.map((benefit) => (
+                        <div class="flex items-center gap-3">
+                            <i class={`fa-solid ${benefit.icon} text-primary text-xl`}></i>
+                            <div class="flex flex-col">
+                                <span class="font-bold text-lg text-primary">{benefit.title}</span>
+                                <span class="text-base text-gray-dark">{benefit.description}</span>
+                            </div>
+
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-20 bg-gradient-to-b from-white to-gray-50/50 overflow-hidden">
+    <div class="container mx-auto px-6 lg:px-16">
+        
+        <!-- Cabecera de la Sección -->
+        <div class="max-w-3xl mb-8" data-aos="fade-up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-sm font-medium mb-4 border border-emerald-100">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                {t.about.etiquette}
+            </div>
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-primary mb-6 text-balance">
+                {t.about.titleCompromiso}
+            </h2>
+            <p class="text-lg md:text-xl text-gray-dark leading-relaxed">
+                {t.about.descriptionCompromiso}
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+            {commitments.map((commitment) => (            
+                <figure class="group relative w-full max-w-sm overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <a href="#" class="block overflow-hidden">
+                        <img class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105" 
+                            src={`${commitment.imagen}`} 
+                            alt="Compromiso Ambiental">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-opacity duration-300 group-hover:from-black/95"></div>
+                    </a>
+                    <figcaption class="absolute px-6 text-white bottom-6 z-10">
+                        <div class="flex items-center gap-2 mb-2 text-emerald-400 font-bold text-xs tracking-wider uppercase">
+                            <i class={`fa-solid ${commitment.icon}`}></i>
+                            <span>{commitment.etiquette}</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">{commitment.title}</h3>
+                        <p class="text-sm text-gray-200/90 leading-relaxed">
+                            {commitment.description}
+                        </p>
+                    </figcaption>
+                </figure>
+            ))}
+        </div>
+
+    </div>
+</div>
