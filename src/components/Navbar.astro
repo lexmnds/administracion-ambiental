@@ -55,7 +55,7 @@ const lang = getLangFromUrl(Astro.url);
 						<a href={path(lang, "contact")} class="block py-2 px-3 text-primary  rounded hover:text-secondary md:hover:bg-transparent md:border-0 md:hover:text-blue-dark md:p-0 md:dark:hover:bg-transparent">{t.navbar.contact}</a>
 					</li>
 					<li>
-						<button type="button" data-dropdown-toggle="language-dropdown-menu" class="flex items-center text-dark bg-gray-soft hover:text-white  box-border border border-transparent hover:bg-secondary focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">
+						<button type="button" data-dropdown-toggle="language-dropdown-menu" class="flex items-center text-dark bg-primary-soft/50 hover:text-white  box-border border border-transparent hover:bg-secondary focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none">
 							<svg class="h-4 w-4 me-1.5" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" fill="white"/><path d="M16.5012 9.00018C16.5012 5.77544 14.4659 3.02637 11.6099 1.96667V16.0337C14.4659 14.974 16.5012 12.2249 16.5012 9.00018Z" fill="#D80027"/><path d="M1.5 8.99994C1.5 12.2247 3.53531 14.9737 6.39132 16.0334V1.96643C3.53531 3.02613 1.5 5.7752 1.5 8.99994Z" fill="#249F58"/></svg>            
 							{lang === "es" ? t.navbar.spanish : t.navbar.spanish}						
 						</button>
@@ -89,14 +89,27 @@ const lang = getLangFromUrl(Astro.url);
 								</a>
 							</li>
 						</div>
-					</li>	
-						<li>
+					</li>
+						
+						<!--<li>
 							<a href="tel:%2055%205555%205555" type="button" class="text-white bg-secondary hover:bg-primary border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none"> <i class="fa-solid fa-phone text-white"></i> Solicitar cotización</a>
-						</li>
+						</li>-->
 						<li>
-							<a href="https://www.facebook.com/" class="text-primary hover:text-secondary-dark px-2 py-1">
+							<a href="https://www.facebook.com/" class="text-primary hover:text-secondary px-2 py-1">
                 				<i class="fa-brands fa-facebook text-xl"></i>
 								<span class="sr-only">Facebook page</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/" class="text-primary hover:text-secondary px-2 py-1">
+                				<i class="fa-brands fa-instagram text-xl"></i>
+								<span class="sr-only">Instragram page</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/" class="text-primary hover:text-secondary px-2 py-1">
+                				<i class="fa-brands fa-linkedin text-xl"></i>
+								<span class="sr-only">LinkedIn page</span>
 							</a>
 						</li>				
 						<!-- <li>

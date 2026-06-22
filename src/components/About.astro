@@ -1,6 +1,9 @@
 ---
+import es from "../i18n/es.json";
 import SectionContainer from "./SectionContainer.astro";
+import Breadcrumbs from "./Breadcrumbs.astro";
 const { t }= Astro.props;
+
 const pillars = [
     {icon: 'fa-leaf', title: t.about.firstPillar, description: t.about.firstPillarDescription},
     {icon: 'fa-shield-halved', title: t.about.secondPillar, description: t.about.secondPillarDescription},
@@ -26,14 +29,17 @@ const commitments = [
 
 ---
 <div class="py-12 bg-secondary/50 bg-blend-multiply mb-6">
+    
     <div class="mx-auto px-4 lg:px-6">
+                <Breadcrumbs t={es}/>
+        
         <div class="flex flex-col md:flex-row items-center gap-10">
             <!--CONTENIDO IZQUIERDA -->
             <div class="w-full md:w-1/2 text-primary order-2 md:order-1">
                 <figure class="relative w-full h-full  group">
                     <img src="/nosotros.png" alt="Nosotros Imagen" class="w-full h-64 md:h-[500px] object-cover rounded-3xl shadow-lg" />
                     <div class="absolute -bottom-6 -right-6 bg-white p-5 rounded-2xl shadow-2xl border border-gray-100 flex items-center gap-4 z-10 hidden md:flex animate-fade-up">
-                        <div class="bg-primary-soft/50 p-3 rounded-xl text-secondary-dark">
+                        <div class="bg-primary-soft/30 p-3 rounded-xl text-secondary-dark">
                             <i class="fa-solid fa-shield"></i>
                         </div>
                         <div>
